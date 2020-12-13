@@ -295,11 +295,11 @@ util.assign (Draggable.prototype, {
     }
 
     // prevent browsers from visually dragging the element's outline
-    if (e.preventDefault && !e.target.getAttribute('contenteditable')) {
-      e.preventDefault();
-    } else if (!e.target.getAttribute('contenteditable')) {
-      e.returnValue = false; // IE10
-    }
+    // if (e.preventDefault && !e.target.getAttribute('contenteditable')) {
+    //   e.preventDefault();
+    // } else if (!e.target.getAttribute('contenteditable')) {
+    //   e.returnValue = false; // IE10
+    // }
 
     // set a high z-index, just in case
     me.dragEvent.oldZindex = element.style.zIndex;
